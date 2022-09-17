@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    justify-content: space-evenly;
+}
+
+.navbar-brand{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    margin-right: 10px;
+    font-size: 0.8rem;
+    font-weight:bold;
+    color: black;
+}
+
+/* Home Page  */
+
+.Home_Div {
+    height: 800px;
+}
+
+.row {
+    width: 60%;
+    margin: auto;
+    padding-top: 280px;
+}
+
+.HomeDiv_text {
+    padding-top: 60px;
+}
+
+
+.HomeDiv_text h1{
+    font-weight: 900;
+    color: white;
+}
+
+.HomeDiv_text p{
+    font-size: 0.7rem;
+    margin: 20px 0;
+    color: white;
+}
+
+.HomeButtton {
+    font-size: 0.6rem;
+    font-weight:bold;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: white;
+}
