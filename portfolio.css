@@ -3,28 +3,76 @@
     padding: 0;
 }
 
+/*/////////// Elements Tags Styles ///////////*/
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h3{
+    font-weight: 800;
+}
+
+p{
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #777777;
+}
+
+h6{
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+/*/////////// Classes Styling ///////////*/
+
 .navbar {
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
 }
 
-
-.nav-item {
-    margin-right: 10px;
+.nav-item a{
+    margin-left: 15px;
+    font-weight:600;
     font-size: 0.8rem;
-    font-weight:bold;
-    color: black ;
+    color: #222;
 }
 
-/* Home Page  */
+.nav-item :hover{
+    color:#42d1ff;
+}
+
+.dropdown-menu  {
+    border-radius: 0;
+    border: none;
+    padding-right: 15px;
+}
+
+.dropdown-item {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.dropdown-item :hover{
+    color: #42d1ff;
+    
+}
+
+.dropdown-menu :hover{
+    background-color: white;
+}
+
+/*/////////// Home Page  ///////////*/
 
 .Home_Div {
-    height: 800px;
+    padding: 145px 0;
+    background-image: linear-gradient(to right, #3ea7ff, #42d1ff);
 }
 
 .Home_Row_Div {
-    width: 60%;
+    width: 70%;
     margin: auto;
-    padding-top: 240px;
 }
 
 .HomeDiv_text {
@@ -35,56 +83,66 @@
 .HomeDiv_text h1{
     font-weight: 900;
     color: white;
+    font-size: 3rem;
 }
 
 .HomeDiv_text p{
-    font-size: 0.7rem;
     margin: 20px 0;
     color: white;
+    width: 99%;
 }
 
 .HomeButtton {
-    font-size: 0.6rem;
-    font-weight:bold;
-    padding-left: 25px;
-    padding-right: 25px;
+    font-size: 0.7rem;
+    font-weight:900;
+    padding: 6px 29px;
     background-color: white;
+    box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 10%);
+}
+
+.HomeDiv_text .HomeButtton:hover{
+    background-color:#3ea7ff;
+    color: white;
+    border: 1px solid white;
 }
 
 
-/* Category Div */
+/*/////////// Category Div ///////////*/
 
 .CatergoryDiv {
-    padding: 80px 0;
+    padding: 80px 0 90px 0;
 }
 
-.CatergoryDiv h4{
-    font-weight: bold;
-    font-size: 1.6rem;
+.CatergoryDiv h3{
+    font-weight: 800;
 }
 
 .Category_row_col1 p{
-    font-size: 0.7rem;
     width: 60%;
     margin: auto;
 }
 
 .Category_Row_Div {
-    width: 60%;
+    width: 70%;
     margin: auto;
     text-align: center;
 }
 
 .Category_row_col2 {
-    padding-top: 60px ;
+    padding-top: 70px ;
 }
 
 .Category_row_col2 i{
     border: 1px solid rgb(189, 188, 188);
-    padding: 13px;
+    padding: 15px;
     border-radius: 100%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: rgb(189, 188, 188);
+}
+
+.Category_icon:hover{
+    color: white;
+    background-image: linear-gradient(to right, #3ea7ff, #42d1ff);
 }
 
 .Icon {
@@ -93,22 +151,25 @@
 }
 
 .Category_row_col2 h6{
-    font-weight: bold;
+    font-weight: 800;
     padding: 30px 0 10px 0;
+    font-size: 0.9rem;
 }
 
 .Category_row_col2 p{
-    font-size: 0.7rem;
+    width: 80%;
+    margin: auto;
 }
 
-/* Interior Section */
+/*/////////// Interior Section ///////////*/
 
 .Interior_Section {
-    padding: 90px 0;
+    background-color: #f9f9ff;
+    padding: 90px 0 90px 0;
 }
 
 .Interior_row_div {
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
@@ -118,24 +179,31 @@
 }
 
 .Interior_heading {
-    font-weight: bold;
-    font-size: 1.6rem;
     width: 70%;
 }
 
 .Interior_paragraph {
-    font-size: 0.7rem;
     margin: 15px 0 25px 0;
+    width: 95%;
 }
 
 .Interior_button {
     font-size: 0.6rem;
     padding: 8px 30px;
     font-weight: 600;
+    background-image: linear-gradient(to right, #3ea7ff, #42d1ff);
+    color: white;
+}
+
+.Interior_Section .Interior_button:hover {
+    background-image: linear-gradient(to right, white, white);
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0 10px 15px 3px rgb(196, 194, 194);
 }
 
 .Interior_row_col2 img{
-    height: 350px;
+    height: 380px;
 }
 
 .Interior_row_col2 {
@@ -143,41 +211,41 @@
 }
 
 
-/* Feature Section */
+/*/////////// Feature Section ///////////*/
 
 .Feature_section {
-    padding: 90px 0 80px 0;
+    padding: 80px 0 90px 0;
 }
 
 .Feature_row_div {
-    width: 60%;
+    width: 70%;
     margin: auto;
     text-align: center;
 }
 
 .Features_column {
-    padding: 25px 0 15px 0;
-    margin: 20px 0 0 20px;
-    width: 30%;
+    padding: 30px 0 20px 0;
+    width: 31%;
+    margin: 20px auto 0;
+    background-color:#f9f9ff;
 }
 
-.Feature_row_heading {
-    font-weight: bold;
-    font-size: 1.6rem;
+.Features_column:hover{
+    background-image: linear-gradient(to right, #3ea7ff, #42d1ff);
+    color: white;
+    box-shadow: 1px 10px 15px 3px rgb(211, 208, 208);
 }
 
 .Feature_paragraph {
-    font-size: 0.7rem;
     padding-bottom: 20px;
 }
 
 .features {
     margin-top: 20px;
-    font-weight: bold;
 }
 
 
-/* Video Section */
+/*/////////// Video Section ///////////*/
 
 .Video_Section {
     background-image: url('./Images/video-bg.jpg.webp');
@@ -222,17 +290,16 @@
     padding-right: 40px;
     color: white;
     
-    
 }
 
-/* Slider Section */
+/*/////////// Slider Section ///////////*/
 
 .Slider_Section{
-    padding: 80px 0;
+    padding: 100px 0 100px 0;
 }
 
 .Slider_row_div {
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
@@ -240,77 +307,79 @@
     text-align: center;
 }
 
-.Slider_heading {
-    font-size: 1.6rem;
-    font-weight: bold;
-}
-
 .Slider_paragraph {
-    font-size: 0.7rem;
     padding-bottom: 40px;
 }
 
 .Slider_row_col2 img{
-    width: 100%;
+    height: 500px;
+    margin-left: 10px;
 }
 
-.Slider_row_col2 {
-    padding-left: 0;
+
+.Slider_row_col2 img:hover{
+    opacity: 0.5;
 }
 
-/* Pricing Section */
+/*/////////// Pricing Section ///////////*/
 
 .Pricing_Section {
-    padding: 90px 0 80px 0;
+    padding: 90px 0 90px 0;
+    background-color: #f9f9ff;
 }
 
 .Pricing_row_div {
-    width: 60%;
-    margin: auto;
-    
+    width: 70%;
+    margin: auto; 
+    justify-content: space-evenly;
 }
 
 .Pricing_row_col1 {
     text-align: center;
 }
 
-.Pricing_heading {
-    font-weight: bold;
-    font-size: 1.6rem;
-}
-
 .Pricing_paragraph {
-    font-size: 0.7rem;
     padding-bottom: 40px;
 }
 
-.Pricing_row_col2 p{
-    font-size: 0.7rem;
+.Pricing_row_col2{
+    width: 32%;
 }
+
 
 .card-header {
     background-color: white;
+    height: 100px;
 }
 
 .card-body {
     background-color: white;
+    height: 100px;
 }
+
+.card-body p{
+    margin-top: 10px;
+}
+
 
 .card-footer {
     background-color: white;
+    height: 250px;
 }
 
 .Pricing_card_heading {
-    font-weight: bold;
-    margin: 15px 0 0 0;
+    margin: 25px 0 0 0;
+    margin-left: 10px;
+}
+
+.Pricing_row_col2 p{
+    margin-left: 10px;
 }
 
 .Pricing_card_price {
-    font-size: 1.6rem;
-    font-weight: bold;
     position: absolute;
-    top: 22px;
-    right: 25px;
+    top: 30px;
+    right: 28px;
 }
 
 .card-header {
@@ -322,18 +391,49 @@
     font-weight: 500;
     padding-right: 25px;
     padding-left: 25px;
-    margin-top: 10px;
+    margin: 10px 0 10px 10px;
 }
 
+/*/////////// Pricing Hover States ///////////*/
 
-/* FAQ Section */
+
+.card:hover .card-body {
+    background-image: linear-gradient(to right, #3ea7ff, #42d1ff);
+    box-shadow: 5px 10px 8px rgb(211, 208, 208);
+}
+
+.card:hover .card-body p{
+    color: white;
+}
+
+.card:hover .card-footer{
+    background-image: linear-gradient(to right, #3ea7ff, #42d1ff);
+    border-color:white ;
+    box-shadow: 5px 10px 8px rgb(211, 208, 208);
+}
+
+.card:hover .card-footer p{
+    color: white;
+}
+
+.card:hover .Price_button {
+    background-color: white;
+    color: black;
+    border-style: none;
+}
+
+.card .Price_button:hover {
+    border: 1px solid black;
+}
+
+/* ///////////FAQ Section ///////////*/
 
 .FAQ_Section {
-    padding: 90px 0 80px 0;
+    padding: 90px 0 100px 0;
 }
 
 .FAQ_row_div {
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
@@ -341,13 +441,7 @@
     text-align: center;
 }
 
-.FAQ_heading {
-    font-size: 1.6rem;
-    font-weight: bold;
-}
-
 .FAQ_paragraph {
-    font-size: 0.7rem;
     padding-bottom: 40px;
 }
 
@@ -356,38 +450,30 @@
     padding-right: 80px;
 }
 
-.FAQ_row_col2 p{
-    font-size: 0.7rem;
-}
-
-.FAQ_row_col2 h2{
+.FAQ_row_col2 h1{
+    font-size: 2.3rem;
     font-weight:900;
     margin: 0;
-    color: rgb(41, 152, 221);
+    color: #42d1ff;
 }
 
-
 .FAQ_row_col3 p{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin: 15px 0;
     width: 75%;
 }
 
-.FAQ_row_col3 h6{
-    font-weight: bold;
-}
-
-/* Download section */
+/* ///////////Download section ///////////*/
 
 .Download_Section {
-    padding: 80px 0 80px 0;
+    padding: 80px 0;
+    background-image: linear-gradient(to right, #3ea7ff, #42d1ff);
 }
 
 .Download_row_div {
-    width: 60%;
+    width: 70%;
     margin: auto;
     text-align: center;
-    color: white;
 }
 
 .Download_row_col2 {
@@ -395,20 +481,33 @@
     justify-content: center;
 }
 
-.Download_heading {
-    font-size: 1.6rem;
-    font-weight: bold;
+.Download_paragraph {
+    padding: 20px 0 30px 0;
+    width: 97%;
+    color: white;
 }
 
-.Download_paragraph {
-    font-size: 0.7rem;
-    padding: 20px 0 30px 0;
+.Download_heading {
+    color: white;
 }
 
 .Download_button{
     border-radius: 0;
-    padding: 10px 22px;
+    padding: 12px 22px;
     margin: 0 15px;
+}
+
+.Download_Section .Download_button:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.Download_button:hover i{
+    color: white;
+}
+
+.Download_button:hover a p{
+    color: white;
 }
 
 .Download_button a {
@@ -436,72 +535,80 @@
 
 .Download_icon {
     font-size: 1.8rem;
-    color: rgb(24, 95, 226);
+    color: #42d1ff;
     margin-top: 5px;
 }
 
 .Andriod_icon {
     font-size: 1.4rem;
-    color: rgb(24, 95, 226);
+    color: #42d1ff;
     margin-top: 5px;
 }
 
-/* Contact Section */
+/* ///////////Contact Section ///////////*/
 
 .Contact_Section {
     background-color: #222222;
-    padding: 80px 0;
+    padding: 80px 0 90px 0;
 }
 
 .Contact_row_div h6{
-    font-weight: bold;
     margin-bottom: 15px;
     color: white;
 }
 
 .Contact_row_div {
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
 .contact_row_col1 a{
     text-decoration: none;
     font-size: 0.7rem;
+    font-weight: 300;
     color: white;
     display: block;
-    margin: 5px 0 5px 0;
+    margin: 7px 0 7px 0;
 }
 
 .Contact_paragraph {
-    font-size: 0.7rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: white;
 }
 
 .Contact_Email{
     border-radius: 20px;
     font-size: 0.7rem;
-    padding: 6px 85px 6px 13px;
+    padding: 8px 130px 8px 15px;
     border-style: none;
 }
 
 .Contact_button {
     font-size: 0.7rem;
     font-weight: 600;
-    padding: 6px 20px;
+    padding: 8px 23px;
     border-radius: 20px;
     margin-left: 20px;
+    background-image: linear-gradient(to right, #3ea7ff, #42d1ff);
+    color: white;
+}
+
+.Contact_Section .Contact_button:hover{
+    background-image: linear-gradient(to right, #3ea7ff, #42d1ff);
+    color: white;
+}
+
+.Contact_button:hover i{
+    padding-left: 5px;
 }
 
 .contact_row_col3 {
     padding: 0;
-
 }
 
 .Contact_Images {
-    height: 45px;
-    margin: 0 2px 6px 0;
-    
+    height: 50px;
+    margin: 0 0 6px 3px;
 }
 
 .Contact_row_col4 {
@@ -515,11 +622,11 @@
 
 .Contact_row_col4 a{
     text-decoration: none;
-    color: rgb(42, 186, 235);
+    color:#42d1ff;
 }
 
 .Contact_row_col4 i{
-    color: rgb(42, 186, 235);
+    color: #42d1ff;
 }
 
 .Contact_row_col5 {
@@ -528,7 +635,7 @@
 }
 
 .Contact_icons {
-    padding: 6px 8px;
+    padding: 9px 12px;
     font-size: 0.7rem;
     background-color: #141313;
     color: white;
@@ -536,4 +643,9 @@
 
 .facebook_icon{
     padding: 0 2px;
+}
+
+.Contact_icons:hover{
+    background-image: linear-gradient(to right, #3ea7ff, #42d1ff);
+    color: white;
 }
